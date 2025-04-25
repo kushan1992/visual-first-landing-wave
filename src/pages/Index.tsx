@@ -7,23 +7,23 @@ import { User, Globe, AlertCircle, Brain } from 'lucide-react';
 const Index = () => {
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900">
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* Left Column - Image and Quote */}
-        <div className="relative">
+      <div className="flex">
+        {/* Left Column - Image (25%) */}
+        <div className="w-1/4 h-screen relative">
           <img
             src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
             alt="Professional woman in office"
-            className="w-full h-[600px] object-cover rounded-lg"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-8 left-8 right-8 bg-[#003B4A] text-white p-6 rounded-lg">
+          <div className="absolute bottom-8 left-4 right-4 bg-[#003B4A] text-white p-6 rounded-lg">
             <p className="text-lg">
               "I take great pride helping others get hired, unlocking their full potential as long as providing perfect employee for my clients."
             </p>
           </div>
         </div>
 
-        {/* Right Column - Content */}
-        <div className="space-y-8">
+        {/* Right Column - Content (75%) */}
+        <div className="w-3/4 p-12 overflow-y-auto h-screen">
           {/* Header */}
           <div>
             <h1 className="text-4xl font-bold mb-2">Olivia</h1>
@@ -31,7 +31,7 @@ const Index = () => {
           </div>
 
           {/* About Section */}
-          <div className="space-y-4">
+          <div className="mt-8 space-y-4">
             <div className="flex items-center gap-2 text-lg font-medium">
               <User className="text-emerald-500" />
               <h2>About me</h2>
@@ -48,7 +48,7 @@ const Index = () => {
           </div>
 
           {/* Demographics */}
-          <div className="space-y-4">
+          <div className="mt-8 space-y-4">
             <div className="flex items-center gap-2 text-lg font-medium">
               <Globe className="text-emerald-500" />
               <h2>Demographic</h2>
@@ -70,7 +70,7 @@ const Index = () => {
           </div>
 
           {/* Pain Points */}
-          <div className="space-y-4">
+          <div className="mt-8 space-y-4">
             <div className="flex items-center gap-2 text-lg font-medium">
               <AlertCircle className="text-emerald-500" />
               <h2>Pain points</h2>
@@ -83,7 +83,7 @@ const Index = () => {
           </div>
 
           {/* Personality */}
-          <div className="space-y-4">
+          <div className="mt-8 space-y-4">
             <div className="flex items-center gap-2 text-lg font-medium">
               <Brain className="text-emerald-500" />
               <h2>Personality</h2>
@@ -98,7 +98,7 @@ const Index = () => {
           </div>
 
           {/* Work Experience */}
-          <div className="space-y-4">
+          <div className="mt-8 space-y-4">
             <h2 className="text-lg font-medium">Work experience</h2>
             <div className="space-y-4">
               <div>
